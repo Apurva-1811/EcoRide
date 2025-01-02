@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const host = 3000
+const host = process.env.PORT || 3000;
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 const cookieParser = require('cookie-parser')
